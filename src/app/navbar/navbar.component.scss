@@ -19,10 +19,6 @@
   font-family: Poppins;
 }
 
-.nav-item:first-child {
-  margin-left: 200px;
-}
-
 .nav-item:not(:last-child) {
   border-right: 1px solid #D9D9D9;
 }
@@ -33,7 +29,7 @@
   align-items: center;
   height: 75px;
   color: white;
-  margin-left: 245px;
+  padding-left: 40px;
   font-family: "Source Sans Pro";
 }
 
