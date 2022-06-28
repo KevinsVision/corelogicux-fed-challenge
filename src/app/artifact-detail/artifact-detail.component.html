@@ -1,5 +1,17 @@
-<p>artifact-detail works!</p>
+<section>
+  <div class="artifact-detail" *ngFor="let info of artifactData">
+    <div class="artifact-image">
 
-<div *ngFor="let data of artifactData">
-  <span style="text: bold">{{data.data.title}}</span>{{data.data.id}}
-</div>
+    </div>
+    <div class="artifact-info">
+
+    </div>
+
+
+    <span
+      style="text: bold">{{info.data.title}}</span>
+    <img src="{{info.data.thumbnail.lqip}}" alt=""
+         style="height: 500px; width: 500px">
+  </div>
+</section>
+
