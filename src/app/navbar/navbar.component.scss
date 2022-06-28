@@ -1,3 +1,4 @@
+@import "src/fonts";
 
 #dev-logo {
   display: flex;
@@ -10,13 +11,13 @@
   margin: 57px 0 0 29px;
   padding: 20px 10px;
   color: white;
-  font-family: Poppins;
-  font-weight: 300;
+  font-family: Poppins, serif;
+  font-weight: $Poppins-Bold;
 }
 
 .nav-item {
   padding: 0 24px;
-  font-family: Poppins;
+  font-family: Poppins, serif;
 }
 
 .nav-item:not(:last-child) {
@@ -30,13 +31,12 @@
   height: 75px;
   color: white;
   padding-left: 40px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", serif;
 }
 
 .breadcrumb-image {
   background-image: url("/src/assets/breadcrumb-image.png");
   height: 75px;
-  background-repeat: repeat-y;
   width: 100%;
 }
 

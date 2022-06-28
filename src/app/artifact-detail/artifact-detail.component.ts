@@ -11,16 +11,27 @@ import {map} from "rxjs";
 
 
 export class ArtifactDetailComponent implements OnInit {
-  
+
+  imgURL: string = " ";
   artifactData: any = [];
 
   constructor(private api: ArtifactInfoApiService) {
+    this.api.getArtifactDetail().subscribe((...data) =>
+      this.artifactData = JSON.parse(JSON.stringify(data)));
   }
 
   ngOnInit(): void {
 
-    this.api.getArtifactDetail().subscribe((...data) =>
-      this.artifactData = JSON.parse(JSON.stringify(data)));
+    // this.api.getArtifactDetail().subscribe((...data) =>
+    //   this.artifactData = JSON.parse(JSON.stringify(data)));
+
+    // this.getimageURL();
   };
+
+  // getimageURL(): string {
+  //   return this.imgURL = `https://www.artic.edu/iiif/2/${{
+  //     this.artifactData.data.image_id
+  //   }}/full/843,/0/default.jpg`;
+  // }
 
 }
