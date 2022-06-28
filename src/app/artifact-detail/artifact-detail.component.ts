@@ -1,5 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {ArtifactInfoApiService} from 'src/app/artifact-info-api.service';
+import {map} from "rxjs";
 
 
 @Component({
@@ -10,7 +11,7 @@ import {ArtifactInfoApiService} from 'src/app/artifact-info-api.service';
 
 
 export class ArtifactDetailComponent implements OnInit {
-
+  
   artifactData: any = [];
 
   constructor(private api: ArtifactInfoApiService) {
