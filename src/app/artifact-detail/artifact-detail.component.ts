@@ -25,13 +25,6 @@ export class ArtifactDetailComponent implements OnInit {
     // this.api.getArtifactDetail().subscribe((...data) =>
     //   this.artifactData = JSON.parse(JSON.stringify(data)));
 
-    // this.getimageURL();
   };
-
-  // getimageURL(): string {
-  //   return this.imgURL = `https://www.artic.edu/iiif/2/${{
-  //     this.artifactData.data.image_id
-  //   }}/full/843,/0/default.jpg`;
-  // }
-
+  
 }
