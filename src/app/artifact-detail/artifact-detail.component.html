@@ -1,19 +1,28 @@
 <section>
   <div class="artifact-detail" *ngFor="let info of artifactData">
     <div class="artifact-image">
-
+      <img
+        src="https://www.artic.edu/iiif/2/{{info.data['image_id']}}/full/843,/0/default.jpg"
+        alt="">
     </div>
     <div class="artifact-info">
-
+      <p><span id="image-title">{{info.data["title"]}}</span>
+        <span id="image-year">{{info.data["date_display"]}}</span></p>
+      <p id="image-author">{{info.data["artist_display"] | slice: 0:15}}</p>
+      <p id="image-author">{{info.data["artist_display"] | slice: 15}}</p>
+      <p class="image-description-title">Origin</p>
+      <p class="image-description">{{info.data["place_of_origin"]}}</p>
+      <p class="image-description-title">Medium</p>
+      <p class="image-description">{{info.data["medium_display"]}}</p>
+      <p class="image-description-title">Inscriptions</p>
+      <p class="image-description">{{info.data["inscriptions"]}}</p>
+      <p class="image-description-title">Dimensions</p>
+      <p class="image-description">{{info.data["dimensions"]}}</p>
+      <p class="image-description-title">Credit Line</p>
+      <p class="image-description">{{info.data["credit_line"]}}</p>
+      <p class="image-description-title">Reference Number</p>
+      <p class="image-description">{{info.data["main_reference_number"]}}</p>
     </div>
-
-
-    <p>{{info.data.id}}</p>
-    <p>{{info.data.image_id}}</p>
-    <p>{{info.data.thumbnail.width}}</p>
-    <img
-      src="https://www.artic.edu/iiif/2/{{info.data.image_id}}/full/843,/0/default.jpg"
-      alt="">
   </div>
 </section>
 

@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {Observable, throwError} from 'rxjs';
+import {map, Observable, throwError} from 'rxjs';
 import {catchError, retry} from 'rxjs/operators';
 
 
@@ -9,19 +9,14 @@ import {catchError, retry} from 'rxjs/operators';
 })
 export class ArtifactInfoApiService {
 
-  // apiURL: string = 'https://api.artic.edu/api/v1/artworks/120081';
+  apiURL: string = 'https://api.artic.edu/api/v1/artworks/120081';
 
   constructor(private http: HttpClient) {
   }
 
-  getArtifactDetail() {
-    return this.http.get('https://api.artic.edu/api/v1/artworks/120081');
+  getArtifactDetail(): Observable<any> {
+    return this.http.get(this.apiURL);
   }
-
-  // getArtifactDetailV(): Observable<ArtDetail[]> {
-  //   return this.http.get<ArtDetail[]>(this.apiURL);
-  // }
-
 
 }
 

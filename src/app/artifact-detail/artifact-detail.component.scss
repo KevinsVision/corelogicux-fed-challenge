@@ -1,4 +1,68 @@
+@import "src/fonts";
+
+.artifact-detail {
+  display: flex;
+}
+
 img {
-  width: 2000px;
-  height: auto;
+  width: 525px;
+  height: 434px;
+  margin: 100px 100px 100px 73px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.artifact-info {
+  margin-top: 100px;
+}
+
+.image-description-title {
+  margin-top: 30px;
+}
+
+#image-title {
+  font-family: Poppins;
+  font-weight: $Poppins-Bold;
+  color: $Font-color-blue;
+  font-size: 26px;
+}
+
+#image-year {
+  font-family: Poppins;
+  font-weight: $Poppins-Bold;
+  color: $Font-color-gray;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#image-author {
+  font-family: "Source Sans Pro";
+  font-weight: $Sans-Pro-Medium;
+  color: $Font-color-gray;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.image-description-title {
+  font-family: "Source Sans Pro";
+  font-weight: $Sans-Pro-Light;
+  color: $Font-color-gray;
+  font-size: 14px;
+}
+
+.image-description {
+  font-family: "Source Sans Pro";
+  font-weight: $Sans-Pro-Bold;
+  color: $Font-color-black;
+  font-size: 16px;
+}
+
+p:last-child:after {
+  content: '';
+  position: absolute;
+  top: 780px;
+  left: 292px;
+  background: #D9D9D9;
+  height: 1px;
+  width: 856px;
 }
