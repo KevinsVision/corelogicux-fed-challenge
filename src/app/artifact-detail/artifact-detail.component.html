@@ -3,7 +3,7 @@
     <div class="artifact-image">
       <img
         src="https://www.artic.edu/iiif/2/{{info.data['image_id']}}/full/843,/0/default.jpg"
-        alt="">
+        alt="Landscape with Dog Oil Painting">
     </div>
     <div class="artifact-info">
       <p><span id="image-title">{{info.data["title"]}}</span>
@@ -19,7 +19,9 @@
       <p class="image-description-title">Dimensions</p>
       <p class="image-description">{{info.data["dimensions"]}}</p>
       <p class="image-description-title">Credit Line</p>
-      <p class="image-description">{{info.data["credit_line"]}}</p>
+      <p
+        class="image-description">{{info.data["credit_line"] | slice: 0:58}}</p>
+      <p class="image-description">{{info.data["credit_line"] | slice: 58}}</p>
       <p class="image-description-title">Reference Number</p>
       <p class="image-description">{{info.data["main_reference_number"]}}</p>
     </div>
