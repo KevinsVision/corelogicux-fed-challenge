@@ -9,13 +9,18 @@ import {catchError, retry} from 'rxjs/operators';
 })
 export class ArtifactInfoApiService {
 
-  apiURL: string = 'https://api.artic.edu/api/v1/artworks/120081';
+  apiDetailURL: string = 'https://api.artic.edu/api/v1/artworks/120081';
+  apiListingURL: string = 'https://api.artic.edu/api/v1/artworks/search?q=thomas_doughty';
 
   constructor(private http: HttpClient) {
   }
 
   getArtifactDetail(): Observable<any> {
-    return this.http.get(this.apiURL);
+    return this.http.get(this.apiDetailURL);
+  }
+
+  getArtifactListings(): Observable<any> {
+    return this.http.get(this.apiListingURL);
   }
 
 }
