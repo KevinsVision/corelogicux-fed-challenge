@@ -1,0 +1,20 @@
+@import "src/fonts";
+
+.newsletter-container {
+  padding-left: 269px;
+}
+
+#newsletter-title {
+  padding: 60px 0 10px 0;
+  font-family: "Source Sans Pro";
+  font-weight: $Sans-Pro-Light;
+}
+
+.form-input {
+  width: 360px;
+  font-family: "Source Sans Pro";
+}
+
+.btn-primary {
+  background: #5766C4 !important;
+}
