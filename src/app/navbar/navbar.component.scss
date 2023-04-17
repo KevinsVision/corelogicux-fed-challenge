@@ -13,6 +13,7 @@
   color: white;
   font-family: Poppins, serif;
   font-weight: $Poppins-Bold;
+  position: absolute;
 }
 
 .nav-item {
@@ -24,21 +25,22 @@
   border-right: 1px solid #D9D9D9;
 }
 
-.breadcrumb {
-  position: absolute;
+.dropdown-menu {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cl-breadcrumb {
   display: flex;
   align-items: center;
   height: 75px;
   color: white;
-  padding-left: 40px;
+  padding-left: 225px;
   font-family: "Source Sans Pro", serif;
-}
-
-.breadcrumb-image {
-  background-image: url("/src/assets/breadcrumb-image.png");
-  height: 75px;
+  background-color: #191970;
+  background-repeat: repeat-x;
   width: 100%;
 }
+
 
 
 

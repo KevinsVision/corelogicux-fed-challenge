@@ -7,15 +7,12 @@
     </div>
     <div class="artifact-info">
       <p><span id="image-title">{{info.data["title"]}}</span>
-        <span id="image-year">{{info.data["date_display"]}}</span></p>
       <p id="image-author">{{info.data["artist_display"] | slice: 0:15}}</p>
       <p id="image-author">{{info.data["artist_display"] | slice: 15}}</p>
       <p class="image-description-title">Origin</p>
       <p class="image-description">{{info.data["place_of_origin"]}}</p>
       <p class="image-description-title">Medium</p>
       <p class="image-description">{{info.data["medium_display"]}}</p>
-      <p class="image-description-title">Inscriptions</p>
-      <p class="image-description">{{info.data["inscriptions"]}}</p>
       <p class="image-description-title">Dimensions</p>
       <p class="image-description">{{info.data["dimensions"]}}</p>
       <p class="image-description-title">Credit Line</p>
