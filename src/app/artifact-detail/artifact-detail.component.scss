@@ -22,14 +22,14 @@ img {
 
 #image-title {
   font-family: Poppins;
-  font-weight: $Poppins-Bold;
+  font-weight: $font-poppins-bold;
   color: $Font-color-blue;
   font-size: 26px;
 }
 
 #image-year {
   font-family: Poppins;
-  font-weight: $Poppins-Bold;
+  font-weight: $font-poppins-bold;
   color: $Font-color-gray;
   font-size: 20px;
   padding-left: 10px;
@@ -37,7 +37,7 @@ img {
 
 #image-author {
   font-family: "Source Sans Pro";
-  font-weight: $Sans-Pro-Medium;
+  font-weight: $font-sans-pro-medium;
   color: $Font-color-gray;
   font-size: 16px;
   margin-top: 5px;
@@ -45,14 +45,14 @@ img {
 
 .image-description-title {
   font-family: "Source Sans Pro";
-  font-weight: $Sans-Pro-Light;
+  font-weight: $font-sans-pro-light;
   color: $Font-color-gray;
   font-size: 14px;
 }
 
 .image-description {
   font-family: "Source Sans Pro";
-  font-weight: $Sans-Pro-Bold;
+  font-weight: $font-sans-pro-bold;
   color: $Font-color-black;
   font-size: 16px;
 }
