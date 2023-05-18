@@ -1,8 +1,12 @@
 <section>
-  <div class="art-listing-section">
+  <div class="art-listing-section" *ngFor="let listing of artifactListing">
     <div id="author-title">
       Other artifacts by
       <p id="author-name">THOMAS DOUGHTY</p>
+    </div>
+    <div class="artifact-listing" *ngFor="let info of listing.data">
+      <br>
+      <p class="image-title" *ngFor="let date of artifactData">{{info["title"]}}, {{date.data["date_end"]}}</p>
     </div>
   </div>
 </section>
