@@ -1,14 +1,17 @@
 <div class="newsletter-container">
   <div id="newsletter-title">Newsletter</div>
 
-  <form class="col-lg-12 form-input">
+  <form class="col-lg-12 form-input" [formGroup]="registerForm" (ngSubmit)="onSubmit">
     <div class="mb-3">
       <input type="email" class="form-control" id="exampleInputEmail1"
              aria-describedby="emailHelp" placeholder="Name">
     </div>
     <div class="mb-3">
       <input type="email" class="form-control" id="exampleInputPassword1"
-             placeholder="Email Address">
+             placeholder="Email Address" formControlName="email" [ngClass]="{'is-invalid':!submitted && registerForm.controls['email'].errors}">
+      <div *ngIf="!submitted && registerForm.controls['email'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['email'].errors['required']">Please enter a valid email address</div>
+      </div>
     </div>
     <button type="submit" class="btn btn-primary">Sign-up</button>
   </form>
