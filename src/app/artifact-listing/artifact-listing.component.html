@@ -6,7 +6,7 @@
     </div>
     <div class="artifact-listing" *ngFor="let info of listing.data">
       <br>
-      <p class="image-title" *ngFor="let date of artifactData">{{info["title"]}}, {{date.data["date_end"]}}</p>
+      <p class="image-title" *ngFor="let date of artifactData">{{info["title"]}}, {{date.data["date_display"]}}</p>
     </div>
   </div>
 </section>
