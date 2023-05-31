@@ -1,12 +1,14 @@
 <section>
-  <div class="art-listing-section" *ngFor="let listing of artifactListing">
+  <div class="art-listing-section">
     <div id="author-title">
       Other artifacts by
       <p id="author-name">THOMAS DOUGHTY</p>
     </div>
-    <div class="artifact-listing" *ngFor="let info of listing.data">
-      <br>
-      <p class="image-title" *ngFor="let date of artifactData">{{info["title"]}}, {{date.data["date_display"]}}</p>
+    <div class="image-title">
+      <!-- Made it static to reflect exactly from the Figma design and moved all logic code into the TS file -->
+      <p>{{artifactData[0]}}, 1835</p> <br>
+      <p>{{artifactData[1]}}, 1832</p> <br>
+      <p>{{artifactData[2]}}, C. 1830</p>
     </div>
   </div>
 </section>
